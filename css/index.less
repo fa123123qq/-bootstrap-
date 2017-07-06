@@ -1,0 +1,336 @@
+@import "wjsfont.less";
+.wjs_big{
+    // 微金所头部
+    .wjs_header{
+        .row{
+            height: 50px;
+            line-height: 50px;
+            >div{
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            text-align: center;
+            font-size: 14px;
+            
+                a{
+                    color: #808080;
+                    position: relative;
+                    img{
+                    display: none;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                }
+                &:hover img {
+                    display: block;
+                    z-index: 1;
+                    }
+                }
+               
+          }
+       
+        }
+        
+    }
+// 微金所导航栏
+    .wjs_nav{
+        .navbar{
+            margin-bottom:0; 
+        }
+        .container{
+             height: 80px;
+                 .navbar-nav{
+                height: 80px;
+            li{
+                a{
+                    line-height: 80px;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    &:hover,&:focus{
+                        border-bottom: 1px solid red;
+                    } 
+                }
+            }
+        }
+        .navbar-brand{
+            padding-top: 5px;
+        }
+        }
+       
+        .wjsfont-logo{
+            font-size: 70px;
+             color: red;
+        }
+        .wjsfont-name{
+            font-size: 70px;
+        }
+    }
+// 微金所轮播图
+    .wjs_carousal{
+          img{
+              width: 100%;
+          }
+    }
+// 微金所交易保障
+    .wjs_jiaoyi{
+        margin-bottom: 60px;
+        
+    .container{
+        .row{
+            >div{
+                padding: 30px 0 0;
+            }
+        }
+        }
+            a{
+                 color: #808080;
+                 &:hover{
+                     color: red;
+                 }
+                .media{
+                   
+                    .media-left{
+                         font-size: 40px;
+                    }
+                    .media-body{
+                        h4{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+       
+
+    }
+// 微金所预约
+    .wjs_yuyue{
+        height: 80px;
+        padding: 30px 0;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        .pull-left{
+            a{
+               color: red; 
+               border-bottom: 1px dashed red;
+            }
+        }
+          .pull-right{
+            a{
+               color: #000; 
+            }
+        }
+    }
+  
+
+
+//微金所特别推荐
+.wjs_tujian{
+    .card_default{
+        margin-top: 10px;
+        margin-left: 10px;
+        box-shadow: 1px 1px 1px 1px #ccc,1px -1px 1px 1px #ccc;
+        .card_a{
+            display: block;
+            padding-right: 80px;
+            position: relative;
+            // border: 1px solid #000;
+            background-color: #f7f7f7;
+            color: #808080;
+            .card_content{
+                
+                >h4{
+                     padding-top: 30px;
+                text-align: center;
+                }  
+                // background-color: sandybrown;
+                .card_box{
+                    padding:0 5px;
+                    .pull-right{
+                        text-align: right;
+                    }
+                }
+            }
+            .card_right{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 80px;
+                height: 100%;
+                border-left: 1px dashed #808080;
+                // background-color: darkcyan;
+                padding: 60px 0;
+                text-align: center;
+                &:before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background:#fff;
+                    transform:translate(-50%,-50%);
+                    box-shadow: 0 1px 1px 1px #ccc;
+                }   
+                 &:after{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background:#fff;
+                    transform:translate(-50%,50%);
+                    box-shadow: 0 -1px 1px 1px #ccc;
+                }
+            }
+        }
+    }
+    // 红色卡片
+    .card_exp{
+        .card_a{
+            background-color: red;
+            color: #fff;
+            .card_content{
+                position: relative;
+                .wjsfont{
+                    font-size: 40px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .card_right{
+                border-color: #fff;
+            }
+        }
+    }
+
+    .card_progress{
+        .card_a{
+            .card_content{
+                   .card_box{
+                    >div{
+                         width: 40%;
+                    }
+                    
+               
+                 }
+            }
+         .card_right{
+             span:first-child{
+                color: green;
+                border:1px solid green;
+             }
+              span:last-child{
+                color: red;
+                border:1px solid red;
+             }
+         }
+            
+        }
+    }
+
+
+}
+
+//微金所新闻
+.wjs_allnew{
+    .all_news{
+        font-size: 30px;
+        border-bottom: 1px solid #000;
+        position: relative;
+        &:before{
+            display: block;
+            content: "";
+            position:absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+            width:10px;
+            height: 10px;
+            border:1px solid #000;
+            transform: translate(0,50%);
+            background-color: #fff;
+        }
+    }
+
+    // 新闻图标
+    .news_title{
+        position: relative;
+        .line{
+            border-right:1px dashed #000;     
+            height: 400px;
+            position: absolute;
+            left: 75px;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 60px;
+                a{
+                    display: block;
+                    height: 70px;
+                    text-align: center;
+                    width: 70px;
+                    padding-top: 10px;
+                    border-radius: 50px;
+                    background-color: #ccc;
+                    z-index: 2;
+                    position: relative;
+                    &:hover,&:focus{
+                        background-color: red;
+                    }
+
+                    .wjsfont{
+                        font-size: 50px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//微金所尾部
+.wjs_footer{
+        text-align: center;
+        h4{
+             margin-top: 40px;
+        }
+    ul{
+       
+        list-style: none;
+        li{
+            float: left;
+             margin-left: 30px;
+            a{
+                span{
+                    
+                    font-size: 90px;
+                   
+                    color: #808080;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
